@@ -1,0 +1,26 @@
+<html>
+  <head>
+  <%
+  var localmeta = {
+    title: '認証画面'
+  };
+  %>
+  <%- include('include/_head', {meta: localmeta}) %>
+  <script src="js/activation.js"></script>
+  </head>
+  <body>
+    <%- include('include/_navbar') %>
+    <div id="activation">
+      <h1>認証画面</h1>
+      <form name="form-activation">
+        <span style="display: inline-block; width: 150px;">Email Address</span>
+        <input type="text" id="email" placeholder="Email Address">
+        <br/>
+        <span style="display: inline-block; width: 150px;">Activation Key</span>
+        <input type="text" id="activationKey" placeholder="Activation Key">
+        <br/><br/>
+        <input type="button" id="activationButton" value="Activation">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <%
+    var localmeta = {
+      title: '登録画面'
+    };
+    %>
+    <%- include('include/_head', {meta: localmeta}) %>
+    <script src="js/signup.js"></script>
+  </head>
+  <body>
+    <%- include('include/_navbar') %>
+    <div id="signup">
+      <h1>登録画面</h1>
+      <form name='form-signup'>
+        <span style="display: inline-block; width: 150px;">User ID(Email)</span>
+        <input type="text" id="email" placeholder="Email Address">
+        <br/>
+        <span style="display: inline-block; width: 150px;">User Name</span>
+        <input type="text" id="name" placeholder="Name">
+        <br/>
+        <span style="display: inline-block; width: 150px;">Password</span>
+        <input type="password" id="password" placeholder="Password">
+        <br/><br/>
+        <input type="button" id="createAccount" value="Create Account">
+      </form>
+    </div>
+  </body>
+</html>
